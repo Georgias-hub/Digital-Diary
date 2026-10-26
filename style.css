@@ -1,0 +1,64 @@
+body {background-color: rgb(227, 226, 233);}
+
+header {border: 0px solid purple;
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding: 10px;
+background-color: rgb(218, 217, 235)}
+
+main {height: 1000px;
+width: 100%;
+padding: 30px;}
+
+section {display: flex;
+     flex-direction: column;
+     width:80%;
+justify-self: center;
+border: 0px solid purple;}
+
+.title {text-align: left;
+border: 0px solid purple;
+margin-bottom: 30px;}
+        
+
+#container {display: grid;
+grid-template-columns: auto auto auto;
+grid-template-rows: 300px auto auto;
+border: 0px solid purple;
+grid-template-areas: "box1 box1 box2"
+                    "box3 box4 box4"
+                    "box5 box5 box5";
+                    height: 800px;
+                    width: 100%;
+                    gap: 20px;
+}
+
+#container div {padding: 32px;}
+
+#container div.box1 {grid-area: box1;
+        text-align: left;
+     background-color: rgb(240, 242, 247);}
+
+        #container div.box2 {grid-area: box2;
+        text-align: left;
+     background-color: rgb(208, 211, 217);}
+
+        #container div.box3 {grid-area: box3;
+        text-align: left;
+     background-color: rgb(208, 211, 217);}
+
+        #container div.box4 {grid-area: box4;
+        text-align: left;
+     background-color: rgb(240, 242, 247);}
+
+        #container div.box5 {grid-area: box5;
+        text-align: center;
+     border: 2px dotted purple;}
+
+     footer {border: 0px solid purple;
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     padding: 10px;
+background-color: rgb(218, 217, 235);}
